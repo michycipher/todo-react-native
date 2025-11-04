@@ -1,50 +1,93 @@
-# Welcome to your Expo app 👋
+# 📝 Todo App (React Native + Convex)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A mobile Todo app with full CRUD functionality using Convex for real-time data sync.
 
-## Get started
+## 🚀 Features
+- Add, edit, delete, and mark todos complete/incomplete
+- Real-time updates via Convex
+- Search, filter, and drag/sort
+- Empty states, loading indicators, and proper error handling 
+- Smooth dark/light theme switching
+- Responsive UI and accessible design on all screen sizes  
+- Pixel-perfect UI and smooth animations  
 
-1. Install dependencies
+## 🧠 Tech Stack
+- **React Native (Expo)**
+- **Convex** (Backend & Real-time sync)
+- **AsyncStorage** 
+- **Expo EAS Build** (For APK generation)
 
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+## ⚙️ Setup Instructions
 ```bash
-npm run reset-project
-```
+git clone https://github.com/michycipher/todo-react-native.git
+cd todo-convex-app
+npm install
+npx expo start
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🔧 Environment Variables
 
-## Learn more
+# This creates a .env file in your root directory
+EXPO_PUBLIC_CONVEX_URL=<your-convex-url>
 
-To learn more about developing your project with Expo, look at the following resources:
+# This creates a convex/ folder where you define your backend functions for:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Creating todos
+Fetching todos
+Updating (edit/toggle complete)
+Deleting todos
 
-## Join the community
+# 🧩 Run the Project Locally
+npx expo start
 
-Join our community of developers creating universal apps.
+- Scan the QR code in your terminal using Expo Go App on your Android/iOS device.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+# Build an APK (Android)
+
+- We used Expo EAS Build to generate the APK.
+- **npx expo login**
+- **npx eas build:configure**
+- **npx eas build -p android --profile preview**
+
+# When the build completes, you’ll get a download link (e.g. Expo dashboard).
+📦 APK Download: https://expo.dev/artifacts/eas/your-apk-link
+
+
+
+
+📦 project-root
+├── app/                   # Screen & # Main pages
+│   ├──_layout.tsx  
+│   ├── about.tsx          #empty page
+│   └──index.tsx           # Main pages (Home, Edit, AddTodo)
+├── convex/                # Convex backend functions
+├── assets/                # Images, icons                
+├── package.json
+├── .env
+└── README.md
+
+### 🧪 Testing & Demo Video
+
+- 🎥 Demo Video (Google Drive): https://drive.google.com/demo-link
+
+- 🧾 APK File (Google Drive): https://drive.google.com/apk-link
+
+## 🎥 In the video:
+
+- Show adding, editing, and deleting todos
+
+- Demonstrate real-time updates
+
+- Toggle between light/dark themes
+
+- Explain briefly how Convex handles real-time data
+
+
+| Command                    | Description                |
+| -------------------------- | -------------------------- |
+| `npx expo start`           | Run app in development     |
+| `npx eas build -p android` | Build APK for Android      |
+| `npx convex dev`           | Start local Convex backend |
+| `npx convex deploy`        | Deploy Convex to cloud     |
+
+
+# Enjoy!
