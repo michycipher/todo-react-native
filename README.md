@@ -46,12 +46,11 @@ npx expo start
 - We used Expo EAS Build to generate the APK.
 - **npx expo login**
 - **npx eas build:configure**
+- **wait for the build to be done (7-15mins)**
 - **npx eas build -p android --profile preview**
 
 # When the build completes, you’ll get a download link (e.g. Expo dashboard).
-📦 APK Download: https://expo.dev/artifacts/eas/your-apk-link
-
-
+📦 APK Download: https://expo.dev/accounts/michuo/projects/todo-mobile-app/builds/02341ed8-2dca-4724-818f-84a407f66ef5
 
 
 📦 project-root
