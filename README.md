@@ -2,6 +2,9 @@
 
 A mobile Todo app with full CRUD functionality using Convex for real-time data sync.
 
+## Figma design
+- https://www.figma.com/design/NRbd5hcrQcAa1LBbctUhf9/todo-app?node-id=0-1&p=f&t=cueaKQpsOEzDgd6l-0
+
 ## 🚀 Features
 - Add, edit, delete, and mark todos complete/incomplete
 - Real-time updates via Convex

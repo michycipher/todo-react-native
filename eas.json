@@ -4,12 +4,15 @@
     "appVersionSource": "remote"
   },
   "build": {
-    "development": {
-      "developmentClient": true,
-      "distribution": "internal"
-    },
     "preview": {
-      "distribution": "internal"
+      "env": {
+        "EXPO_PUBLIC_CONVEX_URL": "https://secret-firefly-953.convex.cloud"
+      },
+      "android": {
+        "buildType": "apk"
+      },
+      "distribution": "internal",
+      "channel": "preview"
     },
     "production": {
       "autoIncrement": true

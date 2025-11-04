@@ -39,17 +39,24 @@
             "backgroundColor": "#000000"
           }
         }
-      ]
+      ],
+      "expo-web-browser"
     ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
     },
     "extra": {
-      "router": {},
+      "convexUrl": "https://secret-firefly-953.convex.cloud",
       "eas": {
         "projectId": "f0d27e49-4a46-44c1-8356-38dbc4ae6784"
       }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/f0d27e49-4a46-44c1-8356-38dbc4ae6784"
     }
   }
 }

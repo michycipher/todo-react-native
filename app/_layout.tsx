@@ -1,9 +1,12 @@
+import Constants from "expo-constants";
 import { ConvexProvider, ConvexReactClient } from "convex/react";
 import { Stack } from "expo-router";
 
-const convex = new ConvexReactClient(process.env.EXPO_PUBLIC_CONVEX_URL!, {
-  unsavedChangesWarning: false,
-});
+// Safely access convex URL
+const convexUrl =
+  Constants.expoConfig?.extra?.convexUrl || process.env.EXPO_PUBLIC_CONVEX_URL;
+
+const convex = new ConvexReactClient(convexUrl!);
 
 export default function RootLayout() {
   return (
