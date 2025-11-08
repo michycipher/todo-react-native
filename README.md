@@ -69,9 +69,9 @@ npx expo start
 
 ### 🧪 Testing & Demo Video
 
-- 🎥 Demo Video (Google Drive): https://drive.google.com/demo-link
+- 🎥 Demo Video (Google Drive): https://drive.google.com/drive/folders/1qOsTTzFRr9QoCXwLqcD87rT1HK2SRETn
 
-- 🧾 APK File (Google Drive): https://drive.google.com/apk-link
+- 🧾 APK File (Google Drive): https://drive.google.com/drive/folders/1qOsTTzFRr9QoCXwLqcD87rT1HK2SRETn
 
 ## 🎥 In the video:
 
