@@ -1,4 +1,4 @@
-import { View, Text, TextInput, FlatList, StyleSheet, Image, TouchableOpacity, Dimensions, Platform, Pressable, ActivityIndicator } from 'react-native';
+import { View, Text, TextInput, StyleSheet, Image, TouchableOpacity, Dimensions, Pressable, ActivityIndicator } from 'react-native';
 import { useState, useEffect } from 'react';
 import { useMutation, useQuery } from "convex/react";
 import { api } from "../convex/_generated/api";
